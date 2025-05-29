@@ -7,4 +7,6 @@ spring:
         - id: web_route
           uri: http://localhost:8080
           predicates:
-            - Path=/**
+            - Path=/web/**
+          filters:
+            - RewritePath=/web/(?<remaining>.*), /${remaining}
