@@ -4,9 +4,9 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: web_route
+        - id: dynamic_route
           uri: http://localhost:8080
           predicates:
-            - Path=/web/**
+            - Path=/**
           filters:
-            - RewritePath=/web/(?<remaining>.*), /${remaining}
+            - RewritePath=/web/(?<remaining>.*), /${remaining} # Rewrite only /web requests
