@@ -12,6 +12,7 @@
         <module>gateway</module>
         <module>reactivegateway</module>
     </modules>
+
     <build>
         <plugins>
             <plugin>
