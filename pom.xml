@@ -9,6 +9,7 @@
 
     <modules>
         <module>web</module>
+        <module>gateway</module>
         <module>reactivegateway</module>
     </modules>
     <build>
