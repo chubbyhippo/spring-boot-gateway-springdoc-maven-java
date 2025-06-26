@@ -10,3 +10,6 @@ spring:
             - Path=/**
           filters:
             - RewritePath=/web/(?<remaining>.*), /${remaining} # Rewrite only /web requests
+logging:
+  level:
+    root: debug
