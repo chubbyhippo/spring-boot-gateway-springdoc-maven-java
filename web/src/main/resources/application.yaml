@@ -1,0 +1,7 @@
+springdoc:
+  api-docs:
+    enabled: true
+    path: /web/v3/api-docs
+  swagger-ui:
+    enabled: true
+    path: /web/swagger-ui.html
