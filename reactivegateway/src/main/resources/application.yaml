@@ -4,10 +4,13 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: dynamic_route
+        - id: web_route
           uri: http://localhost:8080
           predicates:
             - Path=/web/**
-logging:
-  level:
-    root: debug
+springdoc:
+  swagger-ui:
+    enabled: true
+    urls:
+      - name: web-service
+        url: /web/v3/api-docs
