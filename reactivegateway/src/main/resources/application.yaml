@@ -7,9 +7,7 @@ spring:
         - id: dynamic_route
           uri: http://localhost:8080
           predicates:
-            - Path=/**
-          filters:
-            - RewritePath=/web/(?<remaining>.*), /${remaining} # Rewrite only /web requests
+            - Path=/web/**
 logging:
   level:
     root: debug
