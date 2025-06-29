@@ -5,9 +5,7 @@ spring:
     gateway:
       mvc:
         routes:
-          - id: dynamic_route
+          - id: web_service
             uri: http://localhost:8080
             predicates:
-              - Path=/**
-            filters:
-              - RewritePath=/web/(?<remaining>.*), /${remaining} # Rewrite only /web requests
+              - Path=/web/**
