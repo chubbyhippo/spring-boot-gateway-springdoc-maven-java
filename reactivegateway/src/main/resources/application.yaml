@@ -8,9 +8,3 @@ spring:
           uri: http://localhost:8080
           predicates:
             - Path=/web/**
-springdoc:
-  swagger-ui:
-    enabled: true
-    urls:
-      - name: web-service
-        url: /web/v3/api-docs
